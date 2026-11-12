@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTrack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<html>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#my-list">My list</a></li>
+            <li><a href="#favorites">Favosites</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+        </nav>
+    </aside>
+
+    <main class="main content">
+        <header class="topbar">
+            <div class="search-box">
+                <input type="text"
+                placeholder="Search for movie">
+            </div>
+            <button class="theme-toggle">
+                Toggle Theme
+            </button>
+            <div class="profile">
+                <img src="assests/images/profile.jpg.jpeg" alt="User profile">
+                <span>My profile</span>
+            </div>
+        </header>
+
+        <section class="featured-movie">
+        <span class="featured-badge">Featured</span>
+        <h1>Harry Potter</h1>
+        <p>The magic never ends.</p>
+        <button class="trailer-btn">Watch Trailer</button>
+        <img src="assests/images/harry-potter-banner.jpg.jpeg" alt="Harry Potter featured movie" class="featured-imade">
+        </section>
+
+        <aside class="movie-status">
+            <h3>Your movie journey</h3>
+            <div class="state-item">
+                <span>Total movies</span>
+                <strong>24</strong>
+            </div>
+            <div class="state-item">
+                <span>watched</span>
+                <strong>12</strong>
+            </div>
+            <div class="state-item">
+                <span>favorites</span>
+                <strong>6</strong>
+            </div>
+        </aside>
+
+        <section class="my-list">
+            <div class="section-header">
+                <h2>In my List</h2>
+                <a href="#my-list">See all</a>
+            </div>
+             <div class="movie-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">To watch</button>
+                <button class="filter-btn">Watched</button>
+                <button class="filter-btn">Favorites</button>
+             </div>
+
+             <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="assests/images/inception.jpg.jpeg" alt="Inception movie poster">
+                
+                <div class="movie-info"> 
+                     <h3>Inception</h3>
+                     <p>2010 Sci-Fi</p>
+                     <strong>8.8</strong>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="assests/images/interstellar.jpg.jpeg" alt="Interstellar movie poster">
+                
+                <div class="movie-info">
+                     <h3>Interstellar</h3>
+                     <p>2014 Drama</p>
+                     <strong>8.6</strong>
+                  </div>
+                </div>
+              
+                 <div class="movie-card">
+                     <img src="assests/images/batman.jpg.jpeg" alt="The Batman movie poster">
+                 
+                <div class="movie-info">
+                     <h3>The Batman</h3>
+                     <p>2022 Action</p>
+                     <strong>8.3</strong>
+                  </div>
+                </div>
+        </section>
+
+        <section class="explore-movies">
+            <div class="section-header">
+                <h2>Explore Movies</h2>
+                <p>Discover new movies</p>
+
+                <div class="explore-grid">
+
+                    <div class="explore-card">
+                        <img src="assests/images/dune.jpg.jpeg" alt="Dune:Part Two">
+                        <div class="movie-info">
+                            <h3>Dune: Part Two</h3>
+                            <p>2024 Sci=Fi / Adventure</p>
+                            <strong>8.5</strong>
+                        </div>
+                    </div>
+                     
+                    <div class="explore-card">
+                        <img src="assests/images/oppenheimer.jpg.jpeg" alt="Oppenheimer">
+                        <div class="movie-info">
+                            <h3>Oppenheimer</h3>
+                            <p>2023 Biography / Drama</p>
+                            <strong>8.3</strong>
+                        </div>
+                    </div>
+                     
+                    <div class="explore-card">
+                        <img src="assests/images/spider-man.jpg.jpeg" alt="Spider-Man: Across the spider-verse">
+                        <div class="movie-info">
+                            <h3>Spider-Man: Across the spider-verse</h3>
+                            <p>2023 Animation / Action</p>
+                            <strong>8.6</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</div>
+
+</body>
+</html>
