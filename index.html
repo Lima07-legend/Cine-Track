@@ -11,6 +11,8 @@
 <body>
 <div class="app">
     <aside class="sidebar">
+
+        <!--Links to each page-->
         <ul>
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#my-list">My list</a></li>
@@ -23,6 +25,9 @@
     </aside>
 
     <main class="main content">
+
+        <!--Dashboard page displaies first-->
+        <section id="dashboard" class="page active">
         <header class="topbar">
             <div class="search-box">
                 <input type="text"
@@ -42,20 +47,20 @@
         <h1>Harry Potter</h1>
         <p>The magic never ends.</p>
         <button class="trailer-btn">Watch Trailer</button>
-        <img src="assests/images/harry-potter-banner.jpg.jpeg" alt="Harry Potter featured movie" class="featured-imade">
+        <img src="assests/images/harry-potter-banner.jpg.jpeg" alt="Harry Potter featured movie" class="featured-image">
         </section>
 
         <aside class="movie-status">
             <h3>Your movie journey</h3>
-            <div class="state-item">
+            <div class="stat-item">
                 <span>Total movies</span>
                 <strong>24</strong>
             </div>
-            <div class="state-item">
+            <div class="stat-item">
                 <span>watched</span>
                 <strong>12</strong>
             </div>
-            <div class="state-item">
+            <div class="stat-item">
                 <span>favorites</span>
                 <strong>6</strong>
             </div>
@@ -116,7 +121,7 @@
                         <img src="assests/images/dune.jpg.jpeg" alt="Dune:Part Two">
                         <div class="movie-info">
                             <h3>Dune: Part Two</h3>
-                            <p>2024 Sci=Fi / Adventure</p>
+                            <p>2024 Sci-Fi / Adventure</p>
                             <strong>8.5</strong>
                         </div>
                     </div>
@@ -141,7 +146,144 @@
                 </div>
             </div>
         </section>
+        </section>
 
+        <!--My list page-->
+        <section id="my-list" class="page">
+            <div class="section-header">
+                <h2>My Movie List</h2>
+                <p>Manage all your movies in one place.</p>
+            </div>
+
+            <div class="movie-filters">
+                <button class="filter-btn Active">All</button>
+                <button class="filter-btn">To Watch</button>
+                <button class="filter-btn">Watched</button>
+                <button class="filter-btn">Favorites</button>
+                <div class="movie-sort">
+                    <label for="sort-movie">Sort buy:</label>
+                    <select id="sort-movie">
+                        <option value="title">Title</option>
+                        <option value="rating">Rating</option>
+                        <option value="year">Release year</option>
+                    </select>
+                </div>
+                <div class="movie-grid">
+                    <!--Add the movie card later-->
+                </div>
+            </div>
+        </section>
+
+        <!--Favorites page-->
+        <section id="favorites" class="page">
+            <div class="section-header">
+                <h2>My Favorites</h2>
+                <p>All the movies you love in one place</p>
+            </div>
+
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="assests/images/harry-potter-banner.jpg.jpeg" alt="Harry Potter poster">
+                    <div class="movie-info">
+                        <h3>Harry Potter</h3>
+                        <p>Fantasy / Adventure</p>
+                        <strong>Favoeite</strong>
+                    </div>
+                </div>
+
+                <div class="movie-card"> 
+                    <img src="assests/images/dune.jpg.jpeg" alt="Dune Part Two poster">
+                    <div class="movie-info">
+                        <h3>Dune: Part Two</h3>
+                        <p>2024 Sci-Fi</p>
+                        <strong>Favorite</strong>
+                    </div>
+                </div>
+
+                <div class="moviee-card">
+                    <img src="assests/images/spider-man.jpg.jpeg" alt="Spider-Man poster">
+                    <div class="movie-info">
+                        <h3>Spider-Man</h3>
+                        <p>2023 Animtion</p>
+                        <strong>Favorite</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Explore page-->
+        <section id="explore" class="page">
+            <div class="section-header">
+                <h2>Explore Movies</h2>
+                <p>Discover movies and add them to your collection</p>
+            </div>
+
+            <!--Search movies-->
+            <div class="explore-search">
+                <input type="text" placeholder="Search for a movie...">
+                <button type="button">Search</button>
+            </div>
+
+            <!-- Add your own movie-->
+            <div class="add-movie">
+                <h2>Add your own movie</h2>
+                <form id="movie-form">
+                    <input type="text" placeholder="Movie title" required>
+                    <input type="text" placeholder="Genre" required>
+                    <input type="number" placeholder="Your rating (0-10)" min="0" max="10" step="0.1">
+                    <textarea placeholder="Movie description"></textarea>
+                    <input type="text" placeholder="Movie poster image path">
+                    <button type="submit">Addd movie</button>
+                </form>
+            </div>
+
+            <!--Movie search result-->
+            <div class="explore-grid">
+            </div>
+        </section>
+
+        <!--About page-->
+        <section id="about" class="page">
+            <div class="section-header">
+                <h2>About CineTrack</h2>
+                <p>Your personal movie dairy</p>
+            </div>
+
+            <div class="about-content">
+                <h3>Welcome to CineTrack</h3>
+                <p>CineTrack helps you organize your movies, keep track of what you watch, rate movies, and save your favorites</p>
+                <h3>Our purposes</h3>
+                <p>To make your movie journey organized, enjoyable, and easy to manade</p>
+            </div>
+        </section>
+        
+        <!--Setting page-->
+        <section id="settings" class="page">
+            <div class="section-header">
+                <h2>Settings</h2>
+                <p>Customize your CineTrack experince</p>
+            </div>
+
+            <div class="setting-content">
+                <div class="setting-item">
+                    <label for="theme-setting">Dark mode</label>
+                    <input type="checkbox" id="theme-setting">
+                </div>
+
+                <div class="settting-item">
+                    <label for="username"Username></label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                 </div>
+
+                 <div class="setting-item">
+                    <label for="api key">TMDB API key</label>
+                    <input type="text" id="api key" placeholder="Enter API key">
+                </div>
+
+                <button type="buttton">Save Settings</button>
+            </div>
+        </section>
 
     </main>
 </div>
