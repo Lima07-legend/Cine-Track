@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-<html>
 <body>
 <div class="app">
     <aside class="sidebar">
 
         <!--Links to each page-->
+        <nav>
         <ul>
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#my-list">My list</a></li>
@@ -24,7 +24,7 @@
         </nav>
     </aside>
 
-    <main class="main content">
+    <main class="main-content">
 
         <!--Dashboard page displaies first-->
         <section id="dashboard" class="page active">
@@ -43,10 +43,12 @@
         </header>
 
         <section class="featured-movie">
-        <span class="featured-badge">Featured</span>
-        <h1>Harry Potter</h1>
-        <p>The magic never ends.</p>
-        <button class="trailer-btn">Watch Trailer</button>
+        <div class="featured-content">
+            <span class="featured-badge">Featured</span>
+            <h1>Harry Potter</h1>
+            <p>The magic never ends.</p>
+            <button class="trailer-btn">Watch Trailer</button>
+        </div>
         <img src="assests/images/harry-potter-banner.jpg.jpeg" alt="Harry Potter featured movie" class="featured-image">
         </section>
 
@@ -78,7 +80,7 @@
                 <button class="filter-btn">Favorites</button>
              </div>
 
-             <div class="movie-grid">
+            <div class="movie-grid">
                 <div class="movie-card">
                     <img src="assests/images/inception.jpg.jpeg" alt="Inception movie poster">
                 
@@ -86,7 +88,7 @@
                      <h3>Inception</h3>
                      <p>2010 Sci-Fi</p>
                      <strong>8.8</strong>
-                  </div>
+                 </div>
                 </div>
 
                 <div class="movie-card">
@@ -96,7 +98,7 @@
                      <h3>Interstellar</h3>
                      <p>2014 Drama</p>
                      <strong>8.6</strong>
-                  </div>
+                 </div>
                 </div>
               
                  <div class="movie-card">
@@ -108,12 +110,14 @@
                      <strong>8.3</strong>
                   </div>
                 </div>
+            </div>
         </section>
 
         <section class="explore-movies">
             <div class="section-header">
                 <h2>Explore Movies</h2>
                 <p>Discover new movies</p>
+            </div>
 
                 <div class="explore-grid">
 
@@ -144,7 +148,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         </section>
 
@@ -156,12 +159,13 @@
             </div>
 
             <div class="movie-filters">
-                <button class="filter-btn Active">All</button>
+                <button class="filter-btn active">All</button>
                 <button class="filter-btn">To Watch</button>
                 <button class="filter-btn">Watched</button>
                 <button class="filter-btn">Favorites</button>
+            </div>
                 <div class="movie-sort">
-                    <label for="sort-movie">Sort buy:</label>
+                    <label for="sort-movie">Sort by:</label>
                     <select id="sort-movie">
                         <option value="title">Title</option>
                         <option value="rating">Rating</option>
@@ -169,9 +173,39 @@
                     </select>
                 </div>
                 <div class="movie-grid">
-                    <!--Add the movie card later-->
+                    <!--The movie card-->
+                     <div class="movie-card">
+                    <img src="assests/images/inception.jpg.jpeg" alt="Inception movie poster">
+                
+                <div class="movie-info"> 
+                     <h3>Inception</h3>
+                     <p>2010 Sci-Fi</p>
+                     <strong>8.8</strong>
+                </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="assests/images/interstellar.jpg.jpeg" alt="Interstellar movie poster">
+                
+                <div class="movie-info">
+                     <h3>Interstellar</h3>
+                     <p>2014 Drama</p>
+                     <strong>8.6</strong>
+                 </div>
+                </div>
+              
+                 <div class="movie-card">
+                     <img src="assests/images/batman.jpg.jpeg" alt="The Batman movie poster">
+                 
+                <div class="movie-info">
+                     <h3>The Batman</h3>
+                     <p>2022 Action</p>
+                     <strong>8.3</strong>
+                  </div>
                 </div>
             </div>
+        </section>
+                </div>
         </section>
 
         <!--Favorites page-->
@@ -187,7 +221,7 @@
                     <div class="movie-info">
                         <h3>Harry Potter</h3>
                         <p>Fantasy / Adventure</p>
-                        <strong>Favoeite</strong>
+                        <strong>Favorite</strong>
                     </div>
                 </div>
 
@@ -200,11 +234,11 @@
                     </div>
                 </div>
 
-                <div class="moviee-card">
+                <div class="movie-card">
                     <img src="assests/images/spider-man.jpg.jpeg" alt="Spider-Man poster">
                     <div class="movie-info">
                         <h3>Spider-Man</h3>
-                        <p>2023 Animtion</p>
+                        <p>2023 Animation</p>
                         <strong>Favorite</strong>
                     </div>
                 </div>
@@ -247,14 +281,14 @@
         <section id="about" class="page">
             <div class="section-header">
                 <h2>About CineTrack</h2>
-                <p>Your personal movie dairy</p>
+                <p>Your personal movie diary</p>
             </div>
 
             <div class="about-content">
                 <h3>Welcome to CineTrack</h3>
                 <p>CineTrack helps you organize your movies, keep track of what you watch, rate movies, and save your favorites</p>
                 <h3>Our purposes</h3>
-                <p>To make your movie journey organized, enjoyable, and easy to manade</p>
+                <p>To make your movie journey organized, enjoyable, and easy to manage</p>
             </div>
         </section>
         
@@ -262,7 +296,7 @@
         <section id="settings" class="page">
             <div class="section-header">
                 <h2>Settings</h2>
-                <p>Customize your CineTrack experince</p>
+                <p>Customize your CineTrack experience</p>
             </div>
 
             <div class="setting-content">
@@ -271,17 +305,17 @@
                     <input type="checkbox" id="theme-setting">
                 </div>
 
-                <div class="settting-item">
-                    <label for="username"Username></label>
+                <div class="setting-item">
+                    <label for="username">Username</label>
                     <input type="text" id="username" placeholder="Enter your username">
                  </div>
 
                  <div class="setting-item">
-                    <label for="api key">TMDB API key</label>
-                    <input type="text" id="api key" placeholder="Enter API key">
+                    <label for="api-key">TMDB API key</label>
+                    <input type="text" id="api-key" placeholder="Enter API key">
                 </div>
 
-                <button type="buttton">Save Settings</button>
+                <button type="button">Save Settings</button>
             </div>
         </section>
 
