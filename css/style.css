@@ -40,10 +40,33 @@ body {
     min-height: 100vh;
 }
 
+.logo {
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.logo h2 span {
+    color: var(--text-color);
+}
+
+.logo h2 {
+    color: var(--primary-color);
+}
+
 .sidebar {
     width: 240px;
     min-width: 240px;
-    min-height: 100vh;
+    height: 100vh;
+    position: sticky;
+    top: 0;
     background-color: var(--card-color);
     padding: 20px;
 }
@@ -125,12 +148,14 @@ body {
     align-items: center;
     gap: 10px;
     background-color: var(--card-color);
-    padding: 10px 15px;
+    padding: 12px 15px;
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
 }
 
 .search-box {
     flex: 1;
+    width: 100%;
     max-width: 450px;
 }
 
@@ -162,9 +187,7 @@ body {
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    cursor: pointer;
 }
 
 .profile img {
@@ -173,6 +196,52 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.profile-panel {
+    display: none;
+    position: fixed;
+    top: 85px;
+    right: 30px;
+    width: 280px;
+    padding: 20px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.profile-panel.active {
+    display: block;
+}
+
+.profile-panel > img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#close-profile {
+    float: right;
+    border: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#edit-profile {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 
 /* featured movie*/
 .featured-movie {
