@@ -178,13 +178,20 @@ body {
 }
 
 .theme-toggle {
-    padding: 10px 16px;
+    width: 45px;
+    height: 45px;
     border: none;
-    border-radius: 8px;
-    background-color: var(--primary-color);
-    color: white;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    font-size: 22px;
     cursor: pointer;
 }
+
+.theme-toggle:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
 
 .profile {
     cursor: pointer;
